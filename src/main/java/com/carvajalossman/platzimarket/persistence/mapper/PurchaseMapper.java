@@ -3,13 +3,13 @@ package com.carvajalossman.platzimarket.persistence.mapper;
 import com.carvajalossman.platzimarket.domain.Purchase;
 import com.carvajalossman.platzimarket.persistence.entity.Compra;
 import org.mapstruct.InheritInverseConfiguration;
-import org.mapstruct.MapperConfig;
+import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Mappings;
 
 import java.util.List;
 
-@MapperConfig(componentModel = "spring", uses = {PurchaseItemMapper.class})
+@Mapper(componentModel = "spring", uses = {PurchaseItemMapper.class})
 public interface PurchaseMapper {
 
      @Mappings({

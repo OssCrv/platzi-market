@@ -9,8 +9,8 @@ public class Cliente {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="id_cliente")
-    private Integer idCliente;
+    @Column(name="id")
+    private String idCliente;
 
     private String nombre;
 
@@ -26,11 +26,11 @@ public class Cliente {
     @OneToMany(mappedBy="cliente")
     private List<Compra> compras;
 
-    public Integer getIdCliente() {
+    public String getIdCliente() {
         return idCliente;
     }
 
-    public void setIdCliente(Integer idCliente) {
+    public void setIdCliente(String idCliente) {
         this.idCliente = idCliente;
     }
 
