@@ -20,6 +20,10 @@ public class CompraRepository implements PurchaseRepository {
     @Autowired
     private PurchaseMapper mapper;
 
+    @Override
+    public Optional<Purchase> getPurchase(int purchaseId){
+        return compraCrudRepository.findById(purchaseId).map(compra -> mapper.toPurchase(compra));
+    }
 
     @Override
     public List<Purchase> getAll() {
@@ -38,5 +42,10 @@ public class CompraRepository implements PurchaseRepository {
         compra.getProductos().forEach(producto -> producto.setCompra(compra));
 
         return mapper.toPurchase(compraCrudRepository.save(compra));
+    }
+
+    @Override
+    public void delete(int purchaseId){
+        compraCrudRepository.deleteById(purchaseId);
     }
 }
