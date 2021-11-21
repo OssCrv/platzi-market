@@ -1,76 +1,76 @@
 package com.carvajalossman.platzimarket.persistence.entity;
 
-import javax.persistence.*;
 import java.util.List;
+import javax.persistence.*;
 
 @Entity
-@Table(name="clientes")
+@Table(name = "clientes")
 public class Cliente {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="id")
-    private String idCliente;
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Column(name = "id")
+  private String idCliente;
 
-    private String nombre;
+  private String nombre;
 
-    private String apellidos;
+  private String apellidos;
 
-    private Long celular;
+  private Long celular;
 
-    private String direccion;
+  private String direccion;
 
-    @Column(name="correo_electronico")
-    private String correoElectronico;
+  @Column(name = "correo_electronico")
+  private String correoElectronico;
 
-    @OneToMany(mappedBy="cliente")
-    private List<Compra> compras;
+  @OneToMany(mappedBy = "cliente")
+  private List<Compra> compras;
 
-    public String getIdCliente() {
-        return idCliente;
-    }
+  public String getIdCliente() {
+    return idCliente;
+  }
 
-    public void setIdCliente(String idCliente) {
-        this.idCliente = idCliente;
-    }
+  public void setIdCliente(String idCliente) {
+    this.idCliente = idCliente;
+  }
 
-    public String getNombre() {
-        return nombre;
-    }
+  public String getNombre() {
+    return nombre;
+  }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
+  public void setNombre(String nombre) {
+    this.nombre = nombre;
+  }
 
-    public String getApellidos() {
-        return apellidos;
-    }
+  public String getApellidos() {
+    return apellidos;
+  }
 
-    public void setApellidos(String apellidos) {
-        this.apellidos = apellidos;
-    }
+  public void setApellidos(String apellidos) {
+    this.apellidos = apellidos;
+  }
 
-    public Long getCelular() {
-        return celular;
-    }
+  public Long getCelular() {
+    return celular;
+  }
 
-    public void setCelular(Long celular) {
-        this.celular = celular;
-    }
+  public void setCelular(Long celular) {
+    this.celular = celular;
+  }
 
-    public String getDireccion() {
-        return direccion;
-    }
+  public String getDireccion() {
+    return direccion;
+  }
 
-    public void setDireccion(String direccion) {
-        this.direccion = direccion;
-    }
+  public void setDireccion(String direccion) {
+    this.direccion = direccion;
+  }
 
-    public String getCorreoElectronico() {
-        return correoElectronico;
-    }
+  public String getCorreoElectronico() {
+    return correoElectronico;
+  }
 
-    public void setCorreoElectronico(String correoElectronico) {
-        this.correoElectronico = correoElectronico;
-    }
+  public void setCorreoElectronico(String correoElectronico) {
+    this.correoElectronico = correoElectronico;
+  }
 }

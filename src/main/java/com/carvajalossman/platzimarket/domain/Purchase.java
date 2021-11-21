@@ -4,67 +4,68 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 public class Purchase {
-    private int purchaseId;
-    private String clientId;
-    private LocalDateTime date;
-    private String paymentMethod;
-    private String comment;
-    private String state;
-    private List<PurchaseItem> items;
 
-    public int getPurchaseId() {
-        return purchaseId;
-    }
+  private int purchaseId;
+  private String clientId;
+  private LocalDateTime date;
+  private String paymentMethod;
+  private String comment;
+  private String state;
+  private List<PurchaseItem> items;
 
-    public void setPurchaseId(int purchaseId) {
-        this.purchaseId = purchaseId;
-    }
+  public int getPurchaseId() {
+    return purchaseId;
+  }
 
-    public String getClientId() {
-        return clientId;
-    }
+  public void setPurchaseId(int purchaseId) {
+    this.purchaseId = purchaseId;
+  }
 
-    public void setClientId(String clientId) {
-        this.clientId = clientId;
-    }
+  public String getClientId() {
+    return clientId;
+  }
 
-    public LocalDateTime getDate() {
-        return date;
-    }
+  public void setClientId(String clientId) {
+    this.clientId = clientId;
+  }
 
-    public void setDate(LocalDateTime date) {
-        this.date = date;
-    }
+  public LocalDateTime getDate() {
+    return date;
+  }
 
-    public String getPaymentMethod() {
-        return paymentMethod;
-    }
+  public void setDate(LocalDateTime date) {
+    this.date = date;
+  }
 
-    public void setPaymentMethod(String paymentMethod) {
-        this.paymentMethod = paymentMethod;
-    }
+  public String getPaymentMethod() {
+    return paymentMethod;
+  }
 
-    public String getComment() {
-        return comment;
-    }
+  public void setPaymentMethod(String paymentMethod) {
+    this.paymentMethod = paymentMethod;
+  }
 
-    public void setComment(String comment) {
-        this.comment = comment;
-    }
+  public String getComment() {
+    return comment;
+  }
 
-    public String getState() {
-        return state;
-    }
+  public void setComment(String comment) {
+    this.comment = comment;
+  }
 
-    public void setState(String state) {
-        this.state = state;
-    }
+  public String getState() {
+    return state;
+  }
 
-    public List<PurchaseItem> getItems() {
-        return items;
-    }
+  public void setState(String state) {
+    this.state = state;
+  }
 
-    public void setItems(List<PurchaseItem> items) {
-        this.items = items;
-    }
+  public List<PurchaseItem> getItems() {
+    return items;
+  }
+
+  public void setItems(List<PurchaseItem> items) {
+    this.items = items;
+  }
 }

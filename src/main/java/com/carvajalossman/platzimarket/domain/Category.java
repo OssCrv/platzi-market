@@ -1,31 +1,32 @@
 package com.carvajalossman.platzimarket.domain;
 
 public class Category {
-    private int categoryId;
-    private String category;
-    private boolean active;
 
-    public int getCategoryId() {
-        return categoryId;
-    }
+  private int categoryId;
+  private String category;
+  private boolean active;
 
-    public void setCategoryId(int categoryId) {
-        this.categoryId = categoryId;
-    }
+  public int getCategoryId() {
+    return categoryId;
+  }
 
-    public String getCategory() {
-        return category;
-    }
+  public void setCategoryId(int categoryId) {
+    this.categoryId = categoryId;
+  }
 
-    public void setCategory(String category) {
-        this.category = category;
-    }
+  public String getCategory() {
+    return category;
+  }
 
-    public boolean isActive() {
-        return active;
-    }
+  public void setCategory(String category) {
+    this.category = category;
+  }
 
-    public void setActive(boolean active) {
-        this.active = active;
-    }
+  public boolean isActive() {
+    return active;
+  }
+
+  public void setActive(boolean active) {
+    this.active = active;
+  }
 }
